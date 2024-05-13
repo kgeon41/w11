@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Pokemon</title>
+    </head>
+    <body>
+        <h1>포켓몬스터</h1>
+        <h3>세대별 풀타입 스타팅 포켓몬</h3>
+        <script>
+            grass = ["이상해씨", "치코리타", "나무지기", "모부기", "주리비얀", "도치마론", "나몰빼미", "흥나숭", "나오하"]
+            var i = 0;
+            document.write("<ol>")
+            while (i < grass.length) {
+                document.write("<li> <a href='https://pokemon.fandom.com/ko/wiki/" + grass[i] + "'>" + grass[i] + "</li>");
+                var imgNo = i + 1;
+                document.write("<img src='" + imgNo + ".webp', width = 20%>");
+                document.write("<br>");
+                i = i + 1;
+            }
+            document.write("</ol>")
+        </script>
+    </body>
+</html>
